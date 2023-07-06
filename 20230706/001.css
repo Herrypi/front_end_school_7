@@ -1,0 +1,20 @@
+body {
+    color: red;
+}
+
+h1 {
+    color: inherit;
+    border: 2px solid #ddd;
+}
+
+/* currentColor와 같은 경우 부모의 색을 상속받은 색을 사용한다 */
+/* inherit과 같은 경우에는 border도 상속받아 사용할수 있다. */
+strong {
+    border: 5px solid currentColor;
+    /* border: inherit; */
+}
+
+h2 {
+    color: #999;
+    font-family: 'Pretendard-Regular', Verdana, sans-serif;
+}
