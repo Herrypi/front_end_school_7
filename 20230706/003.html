@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        p {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            /* text-align: center; */
+            text-indent: 10px;
+
+            background-color: aquamarine;
+            /* white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; */
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+
+        .fes7 {
+            text-transform: uppercase;
+            /*대문자로 보여줌*/
+            text-decoration: orange underline wavy 3px;
+        }
+
+        .fes6 {
+            text-transform: lowercase;
+            /*소문자로 보여줌*/
+            text-decoration: orange overline solid 3px;
+        }
+
+        .fes5 {
+            text-transform: capitalize;
+            /* 첫글자만 대문자로 보여줌; */
+            text-decoration: orange underline dotted 3px;
+        }
+
+        p::first-letter {
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        .tx-shadow {
+            /* 그림자 주기 */
+            box-shadow: 4px 4px 4px red;
+            text-shadow: 2px 2px 2px red, -0px -0px -0px red;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo, distinctio, eos et eaque neque
+        officiis
+        veniam alias est praesentium consequatur rem laborum ipsa! Vero ipsa explicabo cupiditate natus ad!</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo, distinctio, eos et eaque neque
+        officiis
+        veniam alias est praesentium consequatur rem laborum ipsa! Vero ipsa explicabo cupiditate natus ad!</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo, distinctio, eos et eaque neque
+        officiis
+        veniam alias est praesentium consequatur rem laborum ipsa! Vero ipsa explicabo cupiditate natus ad!</p>
+    <p class="fes7">
+        Frontend School 7
+    </p>
+    <p class="fes6">
+        Frontend School 6
+    </p>
+    <p class="fes5">
+        Frontend School 5
+    </p>
+    <p class="tx-shadow">Text Shadow</p>
+</body>
+
+</html>
