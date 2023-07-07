@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 꾸미기</title>
+    <style>
+        /* .box1 {
+            font-size: 100px;
+            width: 500px;
+            color: white;
+            text-align: center;
+            background-color: #343F50;
+            border: 3px solid black;
+            border-top: 10px solid #4A5568;
+            border-left: 10px solid #4A5568;
+            box-shadow: 10px 10px  black;
+        } */
+        .box2 {
+            height: 115px;
+            width: 310px;
+            box-sizing:border-box;
+            background-color: #4A5568;
+            /* background-origin: content-box; */
+            box-shadow: #000 0px 1px 4px, #000 0px 0px 0px 3px;
+        }
+
+        .box1 {
+            width: 300px;
+            text-align: center;
+            color: white;
+            font-size: 80px;
+            background-color: #343F50;
+            /* background-origin: content-box; */
+
+        }
+
+        .box3 {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 70px;
+            height: 50%;
+            padding: 10px;
+            color: white;
+            width: 300px;
+            background: rgb(114, 55, 247);
+            background: rgb(137, 99, 222);
+            background: linear-gradient(90deg, rgba(137, 99, 222, 1) 0%, rgba(91, 0, 255, 1) 35%, rgba(61, 49, 254, 1) 100%);
+            border-radius: 60px ;
+            border: 10px dashed pink;
+        }
+
+        .box4 {
+            margin-top: 50px;
+            border: 5px solid gainsboro;
+            font-size: 70px;
+            text-align: center;
+            width: 300px;
+            border-top-right-radius: 70px;
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 70px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;        }
+    </style>
+</head>
+
+<body>
+    <div class="box2">
+        <div class="box1">
+            Hello✋
+        </div>
+    </div>
+    <div class="box3">
+        Hello✋
+    </div>
+    <div class="box4">
+        Hello✋
+    </div>
+</body>
+
+</html>
