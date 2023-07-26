@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrap {
+            width: 500px;
+            height: 240px;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 500px;
+        }
+
+        /* Style for the modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+
+        }
+
+        .modal-content {
+            width: 300px;
+            margin: 200px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn {
+            max-width: 100%;
+        }
+
+        [class^="icon"]::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 22px;
+            height: 22px;
+            background-image: url('images_login/icon_sprites_retina.png');
+            background-size: 117px 84px;
+        }
+
+        .link-sns-login.icon-facebook {
+            border: 1px solid #2D9CDB;
+        }
+
+        .link-sns-login.icon-naver {
+            border: 1px solid #00BF18;
+        }
+
+        .link-sns-login.icon-kakao {
+            border: 1px solid #F2C94C;
+        }
+
+        .icon-google::before {
+            width: 22px;
+            height: 22px;
+            background-position: -52px -10px;
+            /* background: url("images_login/icon_google.png") no-repeat; */
+        }
+
+        .icon-naver::before {
+            width: 22px;
+            height: 22px;
+            background-position: -10px -10px;
+            /* background: url("images_login/icon_naver.png") no-repeat; */
+        }
+
+        .icon-kakao::before {
+            width: 22px;
+            height: 22px;
+            background-position: -10px -52px;
+            /* background: url("images_login/icon_kakao.png") no-repeat; */
+        }
+
+        .icon-facebook::before {
+            height: 24px;
+            width: 13px;
+            background-position: -93px -10px;
+
+            /* background: url("images_login/icon_facebook.png") center no-repeat; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h2>Weniv</h2>
+        <p>위니브를 더 즐겁고 편리하게 이용하세요</p>
+        <!-- Add an ID to the button for easier access in JavaScript -->
+        <button id="loginBtn">Sign in</button>
+    </div>
+
+    <!-- The modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <p>로그인 또는 회원가입</p>
+            <hr>
+            <!-- Add your login form here -->
+            <form class="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+            </form>
+            <div class="btn">
+                <hr>
+                <button class="btn-google">
+                    <img src="./images/Google__G__Logo 1.png" alt="">구글 계정으로 로그인
+                </button>
+                <button class="btn-facebook">
+                    <img src="./images/facebook.png" alt="">페이스북 계정으로 로그인
+                </button>
+                <button class="btn-naver">
+                    <img src="./images/naver-logo.png" alt="">네이버 계정으로 로그인
+                </button>
+                <button class="btn-kakao">
+                    <img src="./images/message-circle.png" alt="">카카오톡 계정으로 로그인
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal and the button
+        const modal = document.getElementById('myModal');
+        const loginBtn = document.getElementById('loginBtn');
+
+        // When the button is clicked, show the modal
+        loginBtn.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
