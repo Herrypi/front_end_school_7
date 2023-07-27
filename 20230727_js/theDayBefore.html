@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지난 날짜 계산기</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <h1>현진 ❤️ 민주</h1>
+    <h2 id="love">일째~</h2>
+    <p>2022.11.15</p>
+    <hr>
+    <h3>발렌타인 데이</h3>
+    <p id="valentine">D-0일</p>
+    <p>2024.02.14</p>
+    <hr>
+    <h3>1000일이 되는 날</h3>
+    <p id="thousandDay">날짜</p>
+    <p id="remaindate">남은 날짜</p>
+    <p>2023.11.15</p>
+
+    <script>
+        var now = new Date();
+
+        var loveDay = new Date('2022-11-15');
+
+        var timeDiff = now.getTime() - loveDay.getTime();
+
+        var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+
+        $('#love').text(day + '일째 사랑중~~');
+
+// ----------------------------------------------------------------------
+        var valentine = new Date('2024-02-14');
+        var timeDiff2 = valentine.getTime() - now.getTime();
+        var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
+        $('#valentine').text('D - '+ day2);
+// ----------------------------------------------------------------------
+
+        var ms = now.getTime() + 999 * (1000 * 60 * 60 *24);
+        var thousand = new Date(ms);
+        var thousandDate = thousand.getFullYear() + '.' +(thousand.getMonth()+1) + '.' + (thousand.getDay());
+        $('#thousandDay').text(thousandDate + ' 일 입니다.');
+
+// ----------------------------------------------------------------------
+
+        var remainDate = thousand.getTime() - now.getTime();
+        var day3 = Math.floor(remainDate / (1000 * 60 * 60 * 24) + 1 );
+        $('#remaindate').text(day3 + '일 남았습니다~!');
+
+    </script>
+</body>
+
+</html>
