@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        let s = 'abcdefghij'
+
+        console.log(s.length)
+        console.log(s.toUpperCase())
+        console.log(s.toLowerCase())
+        //  존재하는 값을 찾은 경우
+        console.log(s.indexOf('c'))
+        console.log(s.search('c'))
+        //  존재하지 않는 값을 찾은 경우
+        console.log(s.indexOf('z'))
+        console.log(s.search('z'))
+        //  정규표현식을 넣은 경우(indexOf는 정규 표현식을 허용하지 않음)
+        console.log(s.indexOf(/cd/))
+        console.log(s.search(/cd/))
+
+        // 버전
+        // indexOF ECMAScript 5
+        // 검색 위치 지정 가능
+        // search ECMAScript 1
+        // 정규표현식 가능
+        // 검색 위치 지정 가능 기능
+        let ss = 'paullab CEO 이호준 CTO 김창영'
+        console.log(ss.indexOf('C', 11)) // CTO만 찾고 싶어요!
+    </script>
+</body>
+
+</html>

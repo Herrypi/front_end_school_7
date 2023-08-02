@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let s = 'hello\nworld'
+        // let s = `hello
+        // world`
+
+        console.log(s)
+
+        let age = 10
+        console.log(`홍길동의 나이는 ${age}
+        살 입니다.`)
+        console.log(`홍길동의 나이는 ${2 * age}
+        살 입니다.`)
+        console.log('홍길동의 나이는' + age + '살 입니다.')
+
+        let name = '홍길동'
+        console.log(name[0])
+
+        console.log('1' + 2 + 3)
+        console.log(2 + 3 + '1')
+        console.log(2 + 3 + +'1')
+        console.log('b' + 'a' + + 'a')
+        console.log('lee' + 'hojun')
+        console.log('1' - '1')
+        console.log('hojun'*3)
+
+        //형변환
+        console.log('1' + '1')
+        console.log(+'1' + +'1')
+        console.log(+'1' + Number('1')) //권하지 않음
+        console.log(parseInt(undefined) + parseInt('1'))// 권하는 방법
+
+        console.log(String(1) + String(1))
+
+        console.log((1).toString() + (1).toString())
+
+        let x = 10
+        console.log(x.toString() + x.toString())
+        console.log(x + x)
+    </script>
+</body>
+</html>

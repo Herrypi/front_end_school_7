@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        let str2 = "paullab CEO leehojun CTO kimdohyeon"
+        console.log(str2.substring(str2.indexOf('C'), 20));
+        console.log(str2.substring(str2.indexOf('C', 9), 35));
+
+        // 문제: 홍길동이 반역을 일으켜 이호준이 회사에 CEO 자리에서 물러나고, CTO가 되었습니다. 아래 문구를 출력 문자열로 변경해주세요. indexOf, search, slice, substring 4개를 사용하여 출력문자열을 출력해주세요.(indexOf, search 2개 중 하나 사용 필수이며, slice, substring 2개 중 하나 사용 필수)
+        let 문제예문 = "paullab CEO 이호준 CTO 홍길동";
+
+        // 출력 문자열
+        // 1. CEO 홍길동
+        // 2. CTO 이호준
+        let CEO의위치 = 문제예문.indexOf("CEO")
+        let CTO의위치 = 문제예문.indexOf("CTO")
+
+        let CEO = 문제예문.slice(CEO의위치 + 4, CTO의위치 - 1);
+        let CTO = 문제예문.slice(CTO의위치 + 4);
+
+        console.log(`1. CEO ${CTO}`)
+        console.log(`2. CTO ${CEO}`)
+
+
+        //substring 과 slice의 차이점
+        // 1. 음수 취급
+        // slicd는 음수를 취급, subsring은 양수로 취급
+    </script>
+</body>
+
+</html>
