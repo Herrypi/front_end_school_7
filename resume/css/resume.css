@@ -7,7 +7,12 @@ body {
 }
 
 header {
-    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    font-size: 50px;
+    margin: 20px auto ;
+    font-weight: bold;
 }
 
 content {
