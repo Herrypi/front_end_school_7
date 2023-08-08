@@ -69,7 +69,7 @@ result4;
 
 [149, 180, 192, 170].filter(v => v > 168).length
 
-function solution(array, height){
+function solution(array, height) {
     return array.filter(v => v > height).length
 }
 
@@ -84,6 +84,31 @@ function solution(my_string) {
 let my_string = 'hello world'
 let 모음 = ['a', 'e', 'i', 'o', 'u']
 my_string.split('')
-['h','e','l','l','e',' ','w','o','r','l','d'].filter(v => 모음.includes(v))
+['h', 'e', 'l', 'l', 'e', ' ', 'w', 'o', 'r', 'l', 'd'].filter(v => 모음.includes(v))
 
-my_string.split('').filter(v=>!모음.includes(v)).join('')
+my_string.split('').filter(v => !모음.includes(v)).join('')
+
+// 문제4
+// 1부터 100까지의 숫자 중 3의 배수만 더한 값을 출력해주세요.
+// 앞에서는 forEach사용했는데, 이번에는 map과 filter, reduce를 사용해주세요.
+Array(100)
+    .fill(0)
+    .map((v, i) => i + 1)
+    .filter(v => v % 3 === 0)
+    .reduce((a, c) => a + c, 0)
+
+
+
+// 문제5
+// 1부터 100까지의 숫자 중 1이라는 숫자가 들어간 숫자는 모두 더해주세요.
+// 더하는 숫자 : 1. 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21
+// 더하지 않는 숫자 : 2, 3, 4, 5, 6, 7, 8, 9, 20
+//map과 filter, reduce를 사용해주세요.
+let num = ['1']
+Array(100).fill(0).split('').filter(v => num.includes(v)).reduce((a, c) => a + c, 0)
+
+Array(100)
+    .fill(0)
+    .map((v, i) => i + 1)
+    .filter(v => v.toString().includes('1'))
+    .reduce((a, c) => a + c, 0)
