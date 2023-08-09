@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch 문</title>
+</head>
+
+<body>
+    <script>
+        // switch (new Date().getDay()) {
+        //     case 1:
+        //         document.write('월요일입니다.');
+        //         break;
+        //     case 2:
+        //         document.write('화요일입니다.');
+        //         break;
+        //     case 3:
+        //         document.write('수요일입니다.');
+        //         break;
+        //     case 4:
+        //         document.write('목요일입니다.');
+        //         break;
+        //     case 5:
+        //         document.write('금요일입니다.');
+        //         break;
+        //     default:
+        //         document.write('금금요일입니다. 주말이 뭐죠?');
+        //         break;
+        // }
+
+        let price = 0;
+        let menu = prompt('아메리카노, 카페라떼, 바닐라라떼, 콜드브루, 딸기라떼, 레몬에이드, 에스프레소, 루이보스 중 입력해주세요'); // 메뉴를 바꿔보세요!
+
+        switch (true) {
+            case '아메리카노':
+                price = 4000;
+            case '카페라떼':
+                price = 5000;
+            case '바닐라라떼':
+                price = 6000;
+            case '콜드브루':
+                price = 5500;
+            case '딸기라떼':
+                price = 7000;
+            case '레몬에이드':
+                price = 6500;
+            case '에스프레소':
+                price = 3500;
+            case '루이보스':
+                price = 4500;
+            default:
+                console.log(price);
+        }
+    </script>
+</body>
+
+</html>
