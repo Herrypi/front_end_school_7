@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name: "재현",
+            age: 20,
+            gender: 'male'
+        };
+        console.log(Object.keys(person).length);
+        
+
+        const props = Object.keys(person);
+
+        for (let i = 0; i < Object.keys(person).length; i++) {
+            console.log(`${props[i]}, ${person[props[i]]}`)
+        }
+
+        for (key in person) {
+            console.log(`${person[key]}`);
+        }
+        // // object key의 value 조회
+        // for (key in person) {
+        //     console.log(`${person[key]}`);
+        // }
+    </script>
+</body>
+
+</html>

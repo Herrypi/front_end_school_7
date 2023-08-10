@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        const menu = [
+            { name: "아메리카노", price: 2000 },
+            { name: "카페라떼", price: 2500 },
+            { name: "카페모카", price: 2800 },
+            { name: "핫초코", price: 3000 },
+            { name: "과일주스", price: 3500 },
+        ];
+
+        let input = 0;
+        while (input !== 6) {
+            input = parseInt(prompt("메뉴를 골라주세요. 1.아메리카노, 2.카페라떼, 3.카페모카, 4.핫초코, 5.과일주스, 6.종료"));
+
+            for (let i = 1; i <= 6; i++) {
+                switch (input) {
+                    case input == i:
+                        console.log(`${menu[i - 1].name} : ${menu[i - 1].price}`)
+                }
+            }
+        }
+            // switch (input) {
+            //     case 1:
+            //         console.log(`${menu[0].name} : ${menu[0].price}`);
+            //         break;
+
+            //     case 2:
+            //         console.log(`${menu[1].name} : ${menu[1].price}`);
+            //         break;
+
+            //     case 3:
+            //         console.log(`${menu[2].name} : ${menu[2].price}`);
+            //         break;
+
+            //     case 4:
+            //         console.log(`${menu[3].name} : ${menu[3].price}`);
+            //         break;
+
+            //     case 5:
+            //         console.log(`${menu[4].name} : ${menu[4].price}`);
+            //         break;
+
+            //     case 6:
+            //         console.log(`종료합니다.`);
+            //         break;
+            //     default:
+            //         console.log("번호좀 제대로 눌러줄래요?")
+
+            // }
+
+
+    </script>
+</body>
+
+</html>
+
+
+<!-- const props = Object.keys(menu);
+        console.log(Object.keys(menu)[1].name)
+        // 사용자가 입력한 메뉴 번호에 따라 해당하는 메뉴 이름과 가격을 출력합니다. 만약 종료 번호를 누르면 ‘종료합니다’ 를 콘솔에 출력합니다.
+
+        const choice = prompt("메뉴를 골라주세요. 1.아메리카노, 2.카페라떼, 3.카페모카, 4.핫초코, 5.과일주스, 6.종료")
+        while(choice <= 6) {
+            if(choice == "1") {
+                console.log(`선택하신 메뉴: ${props[0].name} 가격: ${menu[props[0]]}`);
+                break;
+
+
+            }
+            else if(choice == "2") {
+                console.log(`선택하신 메뉴: ${props[1]} 가격: ${menu[props[1]]}`);
+                break;
+
+
+            }
+            else if(choice == "3") {
+                console.log(`선택하신 메뉴: ${props[2]} 가격: ${menu[props[2]]}`);
+                break;
+
+
+            }
+            else if(choice == "4") {
+                console.log(`선택하신 메뉴: ${props[3]} 가격: ${menu[props[3]]}`);
+                break;
+
+
+            }
+            else if(choice == "5") {
+                console.log(`선택하신 메뉴: ${props[4]} 가격: ${menu[props[4]]}`);
+                break;
+
+            }
+            else {
+                console.log(`종료합니다.`);
+                break;
+            }
+        } -->
