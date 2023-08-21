@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // const a = [1, 2, 3, 4, 5]
+        // let sum = 0;
+        // function func1(n) {
+        //     if (n <= 1) {
+        //         return sum;
+        //     }
+        //     return sum = a[n] + func1(n - 1);
+        // }
+        // console.log(func1(a.length));
+
+        function addElements(arr) {
+            if(arr.length === 0){
+                return 0
+            }
+            return arr[0] + addElements(arr.slice(1));
+        }
+
+        console.log(addElements([1, 2, 3, 4, 5]));
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: green;
+        }
+
+        .btn{
+            list-style-position: inside;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="box"></div>
+        <div class="btn">
+            <ul>
+                <li>
+                    <button id="red">빨강</button>
+                </li>
+                <li>
+                    <button id="yellow">노랑</button>
+                </li>
+                <li>
+                    <button id="green">초록</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const box = document.querySelector('.box');
+        const redButton = document.getElementById('red');
+        const yellowButton = document.getElementById('yellow');
+        const greenButton = document.getElementById('green');
+
+        redButton.addEventListener('click', () => {
+            box.style.backgroundColor = 'red';
+        });
+
+        yellowButton.addEventListener('click', () => {
+            box.style.backgroundColor = 'yellow';
+        });
+
+        greenButton.addEventListener('click', () => {
+            box.style.backgroundColor = 'green';
+        });
+    </script>
+</body>
+
+</html>

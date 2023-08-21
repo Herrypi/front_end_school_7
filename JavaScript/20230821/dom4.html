@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <article class="cont">
+        <div class="cont">
+            <h1>hi interduce myself</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rem quia blanditiis architecto cupiditate
+                adipisci accusantium saepe soluta, ad dolorem! Rem fuga quas officiis! Fuga quia fugit facere
+                dignissimos beatae?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, perspiciatis. Soluta amet rem modi, illo
+                ducimus ipsa. Repudiandae, similique asperiores iste amet fugiat quisquam? Iure praesentium nemo
+                laudantium culpa eum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro dignissimos et praesentium
+                placeat perferendis, neque, debitis eaque incidunt a quas illo libero quae odit, doloribus nobis odio
+                explicabo tempora!
+            </p>
+            <strong>감사합니다!</strong>
+        </div>
+        <strong class="sayHi">
+            반갑습니다!
+        </strong>
+    </article>
+
+    <script>
+        const container = document.querySelector('.cont');
+
+        console.log(container.querySelector('strong').closest('.cont'));
+
+        console.log(container.firstElementChild);
+        console.log(container.firstChild);
+        console.log(container.parentNode);
+        console.log(container.lastElementChild);
+        console.log(container.lastChild);
+        console.log(container.children);
+        console.log(container.previousSibling);
+
+
+        const sayHi = document.querySelector('.sayHi');
+        sayHi.insertAdjacentHTML('beforebegin', '<span>안녕하세요!!</span>')
+        sayHi.insertAdjacentHTML('afterbegin', '<span>먀!!</span>')
+        sayHi.insertAdjacentHTML('beforeend', '<span>뮤!!</span>')
+        sayHi.insertAdjacentHTML('afterend', '안녕히 가세요!!')
+    </script>
+</body>
+
+</html>
