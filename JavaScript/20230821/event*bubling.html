@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <form action="">
+        <button></button>
+    </form>
+
+    <script>
+        const form = document.querySelector('form');
+        const btn = document.querySelector('button');
+// 버블링 이부분에서 원래 같으면 submit 처럼 먼제 온게 먼저 찍히고, button처럼 후에 온 부분이 뒤에 찍혀야 하는데 순서가 바뀌어서 찍힘
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            console.log('hello submit');
+        }, true);
+
+        btn.addEventListener('click', () => {
+            console.log('hello button');
+        })
+    </script>
+
+<!-- 버블링은 자식에서 부모로 실행이 되는데
+    button -> submit
+    form의 submit이벤트를 (true)를 추가해서 캡처링으로 바꿈
+    그러면 원래같으면 submit -> button 으로 찍혀야 하는데 예외적으로 button이 또 먼저 찍힘
+-->
+    <article class="parent">
+        <ol>
+            <li><button class="btn-first" type="button">버튼1</button></li>
+            <li><button type="button">버튼2</button></li>
+            <li><button type="button">버튼3</button></li>
+        </ol>
+    </article>
+
+    <script>
+        const btnFirst = document.querySelector('.btn-first');
+        btnFirst.addEventListener('click', (event) => {
+            console.log(event);
+        });
+    </script>
+</body>
+
+</html>
