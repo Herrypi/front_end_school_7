@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <script>
+        const me = {
+            name: '한재현',
+            address: '제주도 제주시 인다 1길',
+            phoneNum: '010-8000-0000',
+            canWalk: function () {
+                console.log('재현이가 걷는다.');
+            },
+            teaching: function (student) {
+                student.levelUp();
+            }
+        }
+        const lion = {
+            level: 1,
+            levelUp: function () {
+                this.level++;
+            }
+        }
+        me.teaching(lion);
+
+
+
+        const im = {
+            name: '최현진',
+            address: '서울시 구로구 천왕로 10',
+            mbti: 'ENFP',
+            idonthavemoney: function() {
+                console.log('텅빈 지갑을 열어본다.');
+            },
+            eating: function (menu) {
+                menu.hungry();
+            }
+        }
+        const pizza = {
+            hunger: 1,
+            hungry: function () {
+                this.hunger++;
+            }
+        }
+        const pasta = {
+            hunger: 1,
+            hungry: function () {
+                this.hunger++;
+                this.hunger++;
+            }
+        }
+
+        im.idonthavemoney();
+        im.eating(pizza);
+        im.eating(pasta);
+
+
+        const arr = new Array(1,2,3);
+        const arr2 = new Array(1,2,3);
+
+
+
+        function Factory(name){
+            this.myname = name;
+
+            this.sayYourName = function () {
+                console.log('삘비리비립리리 제 이름은', this.myname + '입니다...!!!');
+            }
+        }
+
+        const robot1 = new Factory('재현');
+
+        const robot1_1 = new Factory('재현');
+
+    </script>
+</body>
+
+</html>
