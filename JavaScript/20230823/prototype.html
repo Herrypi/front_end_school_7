@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        // const im = {
+        //     name: '최현진',
+        //     address: '서울시 구로구 천왕로 10',
+        //     mbti: 'ENFP',
+        //     idonthavemoney: function () {
+        //         console.log('텅빈 지갑을 열어본다.');
+        //     },
+        //     eating: function (menu) {
+        //         menu.hungry();
+        //     }
+        // }
+        // const pizza = {
+        //     hunger: 1,
+        //     hungry: function () {
+        //         this.hunger++;
+        //     }
+        // }
+        // const pasta = {
+        //     hunger: 1,
+        //     hungry: function () {
+        //         this.hunger++;
+        //         this.hunger++;
+        //     }
+        // }
+
+        function Me() {
+            this.name = '최현진';
+            this.address = '서울시 구로구 천왕로 10';
+            this.mbti = 'ENFP';
+        }
+
+        Me.prototype.idonthavemoney = function () {
+            console.log('텅빈 지갑을 열어본다.');
+        };
+
+        Me.prototype.eating = function (menu) {
+            menu.hungry();
+        }
+
+        function pizza() {
+            this.hunger = 1;
+        }
+
+        pizza.prototype.hungry = function () {
+            this.hunger++;
+        }
+
+        // const pizza = {
+        //     hunger: 1,
+        //     hungry: function () {
+        //         this.hunger++;
+        //     }
+        // }
+        // const pasta = {
+        //     hunger: 1,
+        //     hungry: function () {
+        //         this.hunger++;
+        //         this.hunger++;
+        //     }
+        // }
+    </script>
+</body>
+
+</html>
