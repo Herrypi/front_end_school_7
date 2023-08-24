@@ -1,0 +1,35 @@
+//input: box(100, r) // r은 사각형, rect입니다.
+//output:
+// .one {
+//     width: 100px;
+//     height: 100px;
+//     background-color: blue;
+// }
+
+// //input: box(100, c) // c는 원, circle 입니다.
+// //output:
+// .one {
+//     width: 100px;
+//     height: 100px;
+//     background-color: blue;
+//     border: 1px solid black;
+//     border-radius: 50%;
+// }
+
+@mixin box($size, $shpae) {
+    width: $size;
+    height: $size;
+    background-color: blue;
+    @if($shpae == c) {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+}
+
+.one {
+    @include box(100, r);
+}
+
+.one {
+    @include box(100, c);
+}
