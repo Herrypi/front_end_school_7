@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    min-height: 5000px;
+    background: linear-gradient(to bottom, gold, royalblue);
+}
+
+.wrap {
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+    text-align: center;
+}
+
+path {
+    fill: none;
+    stroke: white;
+    stroke-width: 5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* button -> inline block 요소 */
+.btn-open {
+    /* display: block;
+    margin: auto; */
+    /* wrap에서 text-align: center를 해서 block으로 안바꿔도 됨 */
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: none;
+    color: white;
+    height: 60px;
+    padding: 0 80px;
+    font-size: 22px;
+    border-radius: 100px;
+    opacity: 0;
+    cursor: pointer;
+
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.btn-open:enabled {
+    cursor: pointer;
+}
+
+.btn-open:enabled:hover {
+    color: royalblue;
+    background-color: white;
+}

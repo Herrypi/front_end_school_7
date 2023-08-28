@@ -1,0 +1,7 @@
+$test-array: 'top', 'right', 'bottom', 'left';
+//for of와 같은 문법
+@each $position in $test-array {
+    .border-#{$position} {
+        border-#{$position}: 1px solid #000
+    }
+}
