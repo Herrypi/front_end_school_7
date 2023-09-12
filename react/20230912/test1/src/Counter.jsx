@@ -8,7 +8,7 @@ export default function Counter() {
     function increment() {
         setCount ((prev) => {
             return prev + 1
-        })
+        });
         setCount((prev) => {
             return prev + 1
         });
