@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div class="root"></div>
+    <script>
+        var rootElement = document.getElementById("root");
+
+        // 새로운 div 요소를 생성합니다.
+        var containerDiv = document.createElement("div");
+        containerDiv.className = "container";
+
+        // h1 요소를 생성하고 클래스와 텍스트 내용을 설정합니다.
+        var h1Element = document.createElement("h1");
+        h1Element.className = "ir";
+        h1Element.textContent = "테스트 페이지";
+
+        // section 요소를 생성합니다.
+        var sectionElement = document.createElement("section");
+
+        // section 안의 h2 요소를 생성하고 클래스와 텍스트 내용을 설정합니다.
+        var h2Element = document.createElement("h2");
+        h2Element.className = "section-title";
+        h2Element.textContent = "섹션 제목";
+
+        // section 안의 img 요소를 생성하고 클래스와 src, alt 속성을 설정합니다.
+        var imgElement = document.createElement("img");
+        imgElement.className = "section-img";
+        imgElement.src = "img.jpg";
+        imgElement.alt = "섹션 이미지";
+
+        // section 안의 p 요소를 생성하고 클래스와 텍스트 내용을 설정합니다.
+        var pElement = document.createElement("p");
+        pElement.className = "section-contents";
+        pElement.textContent = "내용";
+
+        // 요소들을 하위 요소로 추가합니다.
+        sectionElement.appendChild(h2Element);
+        sectionElement.appendChild(imgElement);
+        sectionElement.appendChild(pElement);
+        containerDiv.appendChild(h1Element);
+        containerDiv.appendChild(sectionElement);
+        rootElement.appendChild(containerDiv);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.root {
+    background-color: #A5B6EE;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.contents {}
+
+footer {}
+
+.timer-container{
+    padding-top: 48px ;
+}
+
+.timer-box {
+    width: 400px;
+    height: 360px;
+    top: 180px;
+    left: 440px;
+    border-radius: 16px;
+    margin: 60px auto;
+    background-color: #374B7C;
+}
+
+.timer-title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    left: 50%;
+    padding-bottom: 23px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-top: 32px;
+}
+
+.logo {
+    width: 244px;
+    height: 48px;
+    top: 72px;
+    left: 518px;
+}
