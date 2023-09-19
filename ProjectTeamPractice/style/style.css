@@ -1,5 +1,6 @@
-.root {
+.app {
     background-color: #A5B6EE;
+    height: 100vh;
 }
 
 header {
@@ -23,6 +24,7 @@ footer {}
     border-radius: 16px;
     margin: 60px auto;
     background-color: #374B7C;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .timer-title{
@@ -31,6 +33,7 @@ footer {}
     color: white;
     left: 50%;
     padding-bottom: 23px;
+    
 }
 
 .time {
