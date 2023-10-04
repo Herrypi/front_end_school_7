@@ -1,11 +1,13 @@
 .app {
     background-color: #A5B6EE;
     height: 100vh;
+    width: auto;
 }
 
 header {
     display: flex;
     justify-content: center;
+    margin-top: 72px;
 }
 
 .contents {}
