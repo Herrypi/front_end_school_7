@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverse(str) {
+            // 문자열을 배열로 변환하고 뒤집기
+            if (!str || typeof str !== 'string' || str.length < 2 ) return '문자열을 전달해주세요!';
+
+            const backwords = [];
+            const lastIndex = str.length -1 ;
+
+            for(let i =lastIndex; i >= 0; i--) {
+                backwords.push(str[i]);
+
+            }
+
+            return backwords.join('');
+            // const reversedArray = str.split('').reverse();
+            // 다시 문자열로 변환하여 반환
+            // return reversedArray.join('');
+        }
+
+        // 테스트
+        // const originalString = "Hello, World!";
+        // const reversedString = reverse(originalString);
+        // console.log(reversedString); // 결과: "!dlroW ,olleH"
+    </script>
+</body>
+</html>
