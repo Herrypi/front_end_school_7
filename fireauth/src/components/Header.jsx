@@ -17,7 +17,7 @@ export default function Header() {
                 <h1><Link to="/"><img className={styles.logo} src={logo} alt="두근두근 비밀일기" /></Link></h1>
                 <div>
                     { 
-                    // 유저 정보가 없는 상태 즉, 로그아웃 상태라면
+                    // 유저 정보가 없는 상태 즉, 로그아웃 상태라면t a
                         !user && (
                             <>
                                 {location.path === '/sign' ? <Link to="/login" className={"btn-join"}>로그인</Link> : <Link to="/signup" className={"btn-join"}>회원가입</Link>}
